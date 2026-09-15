@@ -1,7 +1,7 @@
 {
   "name": "pmo-skills",
   "description": "Five generic skills for IT PMO work: summarize, report, write-human, conceptual-model, shared-understanding.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": { "name": "antasar-ai" },
   "repository": "https://github.com/antasar-ai/pmo-skills"
 }

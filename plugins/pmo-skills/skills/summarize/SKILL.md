@@ -1,11 +1,13 @@
 ---
 name: summarize
-description: Condense a meeting, thread, document, or transcript into a summary that cannot be shortened without losing a fact. Use when asked to summarize, condense, recap, or write a TL;DR.
+description: Condense a meeting, thread, document, or transcript into an unsummarizable summary, one that loses facts, reasons, or ideas if any words come out. Use when asked to summarize, condense, recap, or write a TL;DR.
 ---
 
 # Summarize
 
-A good summary is one you cannot summarize further. Take words out and something is lost: a fact, a decision, a reason. Every sentence carries information. Nothing describes the source instead of the content.
+> "I strive to make my writing unsummarizable, in the sense that it has so little fluff left in it that if you take any words out, as summaries by definition do, you lose a lot of interesting ideas." (Paul Graham)
+
+This is the standard for the summary itself. It condenses the source, and then it cannot be condensed further: take words out and a fact, a decision, a reason, or an idea is lost. Every sentence carries information. Every sentence is about the content, never about the source.
 
 ## Before you write
 
@@ -16,7 +18,9 @@ Read the whole source. Then settle two things:
 
 ## What to keep
 
-Keep what the reader would miss: numbers, dates, names, owners, decisions and their reasons, disagreements, consequences, open points, and changes to what was believed before.
+Keep what the reader would miss: numbers, dates, names, owners, decisions and their reasons, disagreements, consequences, open points, and changes to what was believed before. Keep the interesting ideas too: the non-obvious claim, the surprising number, the argument that changed the outcome. They are the first casualties of a lazy summary.
+
+Stay concrete. Write the specific claim, not its category: "Vendor B is 40% cheaper but needs six months of migration", not "costs and timelines were discussed". A sentence that fits any meeting carries no information.
 
 Cut what describes the source rather than the content ("the meeting discussed", "the document covers"). Cut repetition, hedges, and pleasantries. Cut the path to a decision when only the decision matters. Keep the source's own terms for things.
 
@@ -32,7 +36,10 @@ Length follows the content and the purpose. A dense one-hour meeting can need a 
 
 ## Last pass
 
-Try to remove each sentence. If nothing is lost, remove it. Then check the other direction: every fact the reader would miss is present, once.
+1. **Cut.** Try to remove each sentence, then each word. If nothing is lost, remove it.
+2. **Sharpen.** Replace every abstract phrase with the concrete fact behind it.
+3. **Check coverage.** Every fact, reason, and idea the reader would miss is present, once.
+4. **Test.** Summarize the summary. If the result keeps everything important, the first version still had fluff; go back to 1.
 
 ## Deliver
 
