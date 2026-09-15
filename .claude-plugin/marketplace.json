@@ -1,0 +1,14 @@
+{
+  "name": "antasar-ai",
+  "owner": {
+    "name": "antasar-ai"
+  },
+  "description": "PMO skills from antasar-ai.",
+  "plugins": [
+    {
+      "name": "pmo-skills",
+      "source": "./plugins/pmo-skills",
+      "description": "Five generic skills for IT PMO work: summarize, report, write-human, conceptual-model, shared-understanding."
+    }
+  ]
+}

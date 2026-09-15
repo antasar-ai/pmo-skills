@@ -1,0 +1,15 @@
+name: release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: scripts/build.sh
+      - run: gh release create "$GITHUB_REF_NAME" --generate-notes dist/claude/*.skill dist/langdock/*.zip dist/pmo-skills-plugin.zip
+        env:
+          GH_TOKEN: ${{ github.token }}

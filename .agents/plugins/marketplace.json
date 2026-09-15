@@ -1,0 +1,12 @@
+{
+  "name": "antasar-ai",
+  "interface": { "displayName": "antasar-ai" },
+  "plugins": [
+    {
+      "name": "pmo-skills",
+      "source": { "source": "local", "path": "./plugins/pmo-skills" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}
