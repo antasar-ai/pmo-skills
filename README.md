@@ -1,6 +1,6 @@
 # PMO skills
 
-Five generic skills for IT PMO work. Each is one `SKILL.md`, short enough to read in a minute, written to nudge the model's thinking rather than force a template.
+Five generic skills for IT PMO work. Each is one `SKILL.md`, short enough to read in a minute, written to nudge the model's thinking rather than force a template. `write-human` keeps its long pattern list in a `references/` file.
 
 | Skill | Use when |
 |---|---|
@@ -8,7 +8,7 @@ Five generic skills for IT PMO work. Each is one `SKILL.md`, short enough to rea
 | `report` | Give one reader the overview they need to decide, to know what happened, or to see what is coming. |
 | `write-human` | Same content, cleaner text. Last pass for anything that gets sent. |
 | `conceptual-model` | Understand a topic from first principles: primitives, relations, boundaries, map, analogy, terms. |
-| `shared-understanding` | Present an idea in the format that lets a specific reader hold it. |
+| `shared-understanding` | Present an idea in the format that lets a specific reader hold it, with lenses for hard-to-follow explanations and unambiguous procedures. |
 
 Connections are loose: report may use summarize; report, conceptual-model, and shared-understanding end with write-human; shared-understanding hands structure and flow to show-me when that skill is present.
 
@@ -31,7 +31,7 @@ Upload files come from the latest [release](https://github.com/antasar-ai/pmo-sk
 ## Release
 
 1. Bump `version` in both `plugins/pmo-skills/.claude-plugin/plugin.json` and `.codex-plugin/plugin.json`.
-2. `git tag v1.0.1 && git push --tags`. The release workflow builds and attaches the bundles.
+2. `git tag v1.1.0 && git push --tags`. The release workflow builds and attaches the bundles.
 
 ## Layout
 
@@ -41,7 +41,7 @@ Upload files come from the latest [release](https://github.com/antasar-ai/pmo-sk
 plugins/pmo-skills/
   .claude-plugin/plugin.json
   .codex-plugin/plugin.json
-  skills/<name>/SKILL.md
+  skills/<name>/SKILL.md           (optional references/ next to it)
 scripts/build.sh                    validates frontmatter, builds dist/
 ```
 
@@ -49,4 +49,4 @@ Codex does not accept a plugin at the marketplace root, so the plugin sits in `p
 
 ## Writing rules for this repo
 
-One file per skill. Positive instructions; state the target behaviour, not the ban. No two rules in one file that contradict each other. Menus over templates. Under 100 lines.
+One `SKILL.md` per skill, under 100 lines; long lookup lists go in `references/` and are linked from it. Positive instructions; state the target behaviour, not the ban. No two rules in one file that contradict each other. Menus over templates.
